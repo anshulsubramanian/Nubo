@@ -57,6 +57,15 @@ const Navbar = () => {
               </button>
             </li>
           ))}
+          {/* 1% Club Button */}
+          <li>
+            <button
+              onClick={() => handleNavClick('#one-percent-club')}
+              className="bg-olive text-contrast-foreground font-subheading text-sm px-4 py-2 rounded-full hover:bg-olive/90 transition-colors shadow-md"
+            >
+              1% Club
+            </button>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -83,6 +92,15 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
+            {/* 1% Club Button - Mobile */}
+            <li>
+              <button
+                onClick={() => handleNavClick('#one-percent-club')}
+                className="block w-full text-center bg-olive text-contrast-foreground font-subheading py-2 px-4 rounded-lg hover:bg-olive/90 transition-colors shadow-md"
+              >
+                1% Club
+              </button>
+            </li>
           </ul>
         </div>
       )}

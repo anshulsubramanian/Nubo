@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram } from 'lucide-react';
 import contactBg from '@/assets/contact_background.jpg';
 
 const Contact = () => {
@@ -58,64 +58,66 @@ const Contact = () => {
           {/* Contact Cards */}
           <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Location */}
-            <div className="bg-balanced/95 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-contrast" />
+            <div className="group relative bg-gradient-to-br from-white/95 to-balanced/80 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand/20 transition-colors">
+                  <MapPin className="w-5 h-5 text-brand" />
                 </div>
                 <div>
-                  <h3 className="font-subheading text-contrast text-xl mb-2">Visit Us</h3>
-                  <p className="font-body text-contrast/70">
-                    123 Green Street, Health Hub<br />
-                    Mumbai, Maharashtra 400001
+                  <h3 className="font-subheading text-contrast text-lg mb-3">Visit Us</h3>
+                  <p className="font-body text-contrast/80 leading-relaxed">
+                    A 15A, 1, Block X, Hauz Khas,<br />
+                    New Delhi, 110016
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Hours */}
-            <div className="bg-balanced/95 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-olive rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-contrast-foreground" />
+            <div className="group relative bg-gradient-to-br from-white/95 to-balanced/80 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-olive/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center flex-shrink-0 group-hover:bg-olive/20 transition-colors">
+                  <Clock className="w-5 h-5 text-olive" />
                 </div>
                 <div>
-                  <h3 className="font-subheading text-contrast text-xl mb-2">Opening Hours</h3>
-                  <p className="font-body text-contrast/70">
-                    Mon - Sat: 8:00 AM - 9:00 PM<br />
-                    Sunday: 9:00 AM - 6:00 PM
+                  <h3 className="font-subheading text-contrast text-lg mb-3">Opening Hours</h3>
+                  <p className="font-body text-contrast/80 leading-relaxed">
+                    Monday - Sunday<br />
+                    11:00 AM - 9:30 PM
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Phone */}
-            <div className="bg-balanced/95 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-sunny rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-contrast" />
+            <div className="group relative bg-gradient-to-br from-white/95 to-balanced/80 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-sunny/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-sunny/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sunny/20 transition-colors">
+                  <Phone className="w-5 h-5 text-sunny" />
                 </div>
                 <div>
-                  <h3 className="font-subheading text-contrast text-xl mb-2">Call Us</h3>
-                  <p className="font-body text-contrast/70">
-                    +91 98765 43210<br />
-                    +91 12345 67890
+                  <h3 className="font-subheading text-contrast text-lg mb-3">Call Us</h3>
+                  <p className="font-body text-contrast/80 leading-relaxed">
+                    +91 92898 88289<br />
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Email */}
-            <div className="bg-balanced/95 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-lettuce rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-contrast" />
+            <div className="group relative bg-gradient-to-br from-white/95 to-balanced/80 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-lettuce/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-lettuce/10 flex items-center justify-center flex-shrink-0 group-hover:bg-lettuce/20 transition-colors">
+                  <Mail className="w-5 h-5 text-lettuce" />
                 </div>
                 <div>
-                  <h3 className="font-subheading text-contrast text-xl mb-2">Email Us</h3>
-                  <p className="font-body text-contrast/70">
-                    hello@nubo.in<br />
-                    orders@nubo.in
+                  <h3 className="font-subheading text-contrast text-lg mb-3">Email Us</h3>
+                  <p className="font-body text-contrast/80 leading-relaxed">
+                    hello@eatnubo.com<br />
                   </p>
                 </div>
               </div>
@@ -127,18 +129,13 @@ const Contact = () => {
             <p className="font-subheading text-contrast-foreground mb-4">Follow Us</p>
             <div className="flex justify-center gap-4">
               <a
-                href="#"
-                className="w-12 h-12 bg-brand rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                href="https://www.instagram.com/eatnubo?igsh=NXd2bW51MmtqNDRv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-12 h-12 bg-gradient-to-br from-white/95 to-balanced/80 backdrop-blur-md rounded-xl border border-white/20 flex items-center justify-center hover:scale-110 hover:shadow-xl transition-all duration-300 shadow-lg"
                 aria-label="Instagram"
               >
-                <Instagram className="w-6 h-6 text-contrast" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-brand rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-6 h-6 text-contrast" />
+                <Instagram className="w-6 h-6 text-contrast group-hover:text-brand transition-colors" />
               </a>
             </div>
           </div>
